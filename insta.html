@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram - Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo.png" alt="Instagram Logo" class="logo-img">
+        <form class="login-form">
+            <input type="text" id="user" oninput="actualiseBtn()" placeholder="Num. téléphone, nom de profil ou e-mail">
+            <input type="password" id="password" oninput="actualiseBtn()" placeholder="Mot de passe">
+            <button type="submit" class="btn-primary" id="valid" disabled onclick="envoyerDonnees()">Se connecter</button>
+        </form>
+        <div class="separator">
+            <span>OU</span>
+        </div>
+        <div class="facebook-login">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+            <a href="#">Se connecter avec Facebook</a>
+        </div>
+        <a href="#" class="forgot-password">Mot de passe oublié ?</a>
+        <p class="report">
+            Vous pouvez également <a href="#">signaler le contenu que vous pensez illégal</a> dans votre pays sans vous connecter.
+        </p>
+        <div class="signup">
+            <p>Vous n’avez pas de compte ? <a href="#">Inscrivez-vous</a></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

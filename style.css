@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 320px; /* augmenté légèrement */
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.logo-img {
+    width: 175px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    background: #121212;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #0095f6;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn-primary:disabled {
+    width: 100%;
+    padding: 10px;
+    background-color: #71b5ff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #777;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #333;
+}
+
+.separator::before {
+    margin-right: 10px;
+}
+
+.separator::after {
+    margin-left: 10px;
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.facebook-login img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.facebook-login a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forgot-password {
+    display: block;
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.report {
+    font-size: 12px;
+    color: #888;
+    margin: 20px 0;
+}
+
+.report a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.signup {
+    margin-top: 20px;
+}
+
+.signup a {
+    color: #0095f6;
+    text-decoration: none;
+}
