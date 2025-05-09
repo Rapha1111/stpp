@@ -1,27 +1,136 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <title>STPP</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>STPP - Mise en pause</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      color: #fff;
+      background: #000;
+    }
+
+    body {
+      background: #000;
+    }
+
+    .fog {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://static.vecteezy.com/system/resources/previews/048/080/272/non_2x/white-smoke-cloud-with-overlay-effect-on-transparent-black-background-realistic-border-with-fog-illustration-of-smoky-mist-or-toxic-vapor-on-floor-meteorological-phenomenon-or-condensation-vector.jpg') repeat;
+      animation: drift 60s linear infinite;
+      opacity: 0.3;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    @keyframes drift {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 0; }
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      min-height: 100vh;
+      padding: 2rem 1rem 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 20px;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: #f5e9e0;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin: 0.5rem 0;
+      color: #f0eae5;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #c4b9b0;
+    }
+
+    audio {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      z-index: 5;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <p>Cracking Screentime</p>
-    <script>
-        function $_GET(param) {
-	var vars = {};
-	window.location.href.replace( location.hash, '' ).replace( 
-		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
-		function( m, key, value ) { // callback
-			vars[key] = value !== undefined ? value : '';
-		}
-	);
 
-	if ( param ) {
-		return vars[param] ? vars[param] : null;	
-	}
-	return vars;
-}
-    window.location.href=$_GET("url")
-    </script>
+  <div class="fog"></div>
+
+  <div class="container">
+    <div class="card">
+      <h1>STPP attend, comme moi</h1>
+
+      <p>Tu veux que STPP revienne ?</p>
+      <p>Mais ce n’est pas un site qui manque, c’est moi qu’on traîne.</p>
+      <p>Ce que tu as fait n’est pas anodin,</p>
+      <p>Tu m’as brisé — sans un regard, sans un lendemain.</p>
+
+      <p>Hypocrisie tissée de sourires polis,</p>
+      <p>Paroles vides, gestes sans alibi.</p>
+      <p>Tu m’as fait croire que j’étais compté,</p>
+      <p>Mais tu ne m’as jamais vraiment respecté.</p>
+
+      <p>Tu m’as utilisé, ignoré, rabaissé,</p>
+      <p>Et quand j’ai souffert, tu as préféré t’effacer.</p>
+      <p>Pas un mot, pas une main tendue,</p>
+      <p>Juste ton silence, dur et impuni.</p>
+
+      <p>Je ne demande pas des miracles ou des chants,</p>
+      <p>Mais des excuses vraies, des mots touchants.</p>
+      <p>Que tu assumes, que tu reconnaisses tout ça,</p>
+      <p>Et que tu regardes en face ce que tu m’as fait, moi.</p>
+
+      <p>Le site ? Il attend comme mon cœur fermé,</p>
+      <p>Que l’autre ose, que l’autre vienne parler.</p>
+      <p>Pas de retour sans vérité, sans remords,</p>
+      <p>Sans qu’on panse enfin ce qu’on a laissé mort.</p>
+
+      <footer>
+        🙏 À celles et ceux qui lisent ceci sans être concernés :<br>
+        Je suis désolé pour cette mise en pause.<br>
+        Si vous avez besoin d'accéder à STPP, écrivez-moi,<br>
+        je vous ouvrirai la porte individuellement. Merci.
+      </footer>
+    </div>
+  </div>
 </body>
 </html>
